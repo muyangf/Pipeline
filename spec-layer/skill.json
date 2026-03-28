@@ -4,33 +4,11 @@
   "type": "spec-layer",
   "description": "Specification Layer of Pipeline OS",
   "handlers": [
-    {
-      "name": "specify",
-      "path": "./specify.js",
-      "description": "从自然语言需求生成结构化需求说明"
-    },
-    {
-      "name": "plan",
-      "path": "./plan.js",
-      "description": "从需求生成实现方案"
-    },
-    {
-      "name": "tasks",
-      "path": "./tasks.js",
-      "description": "从方案拆分任务列表"
-    },
-    {
-      "name": "change-spec",
-      "path": "./change-spec.js",
-      "description": "对现有系统的变更说明"
-    },
-    {
-      "name": "constitution",
-      "path": "./constitution.js",
-      "description": "项目宪法级约束说明"
-    }
+    { "name": "specify", "path": "./specify.js", "description": "需求澄清" },
+    { "name": "plan", "path": "./plan.js", "description": "技术方案设计" },
+    { "name": "tasks", "path": "./tasks.js", "description": "任务拆分" },
+    { "name": "change-spec", "path": "./change-spec.js", "description": "变更说明" },
+    { "name": "constitution", "path": "./constitution.js", "description": "项目宪法" }
   ],
-  "presets": [
-    "pipeline-os-default"
-  ]
+  "presets": ["pipeline-os-default"]
 }

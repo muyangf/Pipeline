@@ -4,38 +4,12 @@
   "type": "execution-layer",
   "description": "Execution Layer of Pipeline OS",
   "handlers": [
-    {
-      "name": "tdd",
-      "path": "./tdd.js",
-      "description": "测试驱动开发入口"
-    },
-    {
-      "name": "implement",
-      "path": "./implement.js",
-      "description": "直接实现入口"
-    },
-    {
-      "name": "subagent",
-      "path": "./subagent.js",
-      "description": "子代理 / 子任务执行"
-    },
-    {
-      "name": "debugging",
-      "path": "./debugging.js",
-      "description": "调试与问题定位"
-    },
-    {
-      "name": "execute-plan",
-      "path": "./execute-plan.js",
-      "description": "按 plan 执行任务"
-    },
-    {
-      "name": "code-style-smart",
-      "path": "./code-style-smart.js",
-      "description": "智能代码风格适配"
-    }
+    { "name": "tdd", "path": "./tdd.js", "description": "测试驱动开发" },
+    { "name": "implement", "path": "./implement.js", "description": "功能实现" },
+    { "name": "subagent", "path": "./subagent.js", "description": "子任务执行" },
+    { "name": "debugging", "path": "./debugging.js", "description": "调试分析" },
+    { "name": "execute-plan", "path": "./execute-plan.js", "description": "按方案执行" },
+    { "name": "code-style-smart", "path": "./code-style-smart.js", "description": "智能代码风格适配" }
   ],
-  "presets": [
-    "pipeline-os-default"
-  ]
+  "presets": ["pipeline-os-default"]
 }

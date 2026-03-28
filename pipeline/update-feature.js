@@ -1,52 +1,56 @@
 module.exports = async ({ input }) => {
   return `
-# 功能迭代（Update Feature Pipeline）
+# 功能迭代路线图（Feature Update Roadmap）
 
-迭代目标：
+输入内容：
 ${input}
 
 ---
 
-信息不足检查：
-- 如果迭代目标不清晰，请先提问。
+## 信息不足检查
+- 如果缺少功能背景或目标，请先提问。
 
-禁止事项：
-- 不得自动修改现有代码
-- 不得自动执行任何命令
+---
+
+## 禁止事项
 - 不得改变输出结构
+- 不得新增字段
+- 不得删除字段
 
 ---
 
 # 任务说明（中文）
 
-请为该功能迭代生成一条完整的迭代路线图。
+请为某个功能生成迭代路线图，包括版本规划、任务拆分、风险与依赖。
 
 ---
 
 # 输出格式（必须严格遵守）
 
-## 迭代路线图
-1. 步骤：/spec-layer.change-spec
+## 功能背景
+- ……
+
+## 版本规划
+- v1：……
+- v2：……
+- v3：……
+
+## 任务拆分
+1. 任务：……
    说明：……
-2. 步骤：/spec-layer.tasks（如需要）
+2. 任务：……
    说明：……
-3. 步骤：/execution-layer.tdd 或 /execution-layer.implement 或 /execution-layer.subagent
-   说明：……
-4. 步骤：/quality-layer.code-review
-   说明：……
-5. 步骤：/quality-layer.refactor（如需要）
-   说明：……
-6. 步骤：/quality-layer.finish-branch
-   说明：……
-7. 步骤：/archive-layer.archive
-   说明：……
-8. 步骤：/archive-layer.changelog
-   说明：……
+
+## 依赖关系
+- ……
+
+## 风险说明
+- ……
+
+---
 
 ## 下一步建议
-- 命令：\`/spec-layer.change-spec\`
-- 理由：……
-
-所有内容必须使用中文。
+- 命令：\`/spec-layer.tasks\`
+- 理由：路线图完成后，应进入任务拆分阶段。
 `;
 };

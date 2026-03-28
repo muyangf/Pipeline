@@ -4,23 +4,9 @@
   "type": "quality-layer",
   "description": "Quality Layer of Pipeline OS",
   "handlers": [
-    {
-      "name": "code-review",
-      "path": "./code-review.js",
-      "description": "代码审查"
-    },
-    {
-      "name": "refactor",
-      "path": "./refactor.js",
-      "description": "重构引导"
-    },
-    {
-      "name": "finish-branch",
-      "path": "./finish-branch.js",
-      "description": "完成分支报告"
-    }
+    { "name": "code-review", "path": "./code-review.js", "description": "代码审查" },
+    { "name": "refactor", "path": "./refactor.js", "description": "代码重构" },
+    { "name": "finish-branch", "path": "./finish-branch.js", "description": "分支完成报告" }
   ],
-  "presets": [
-    "pipeline-os-default"
-  ]
+  "presets": ["pipeline-os-default"]
 }

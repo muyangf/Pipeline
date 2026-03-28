@@ -4,18 +4,8 @@
   "type": "archive-layer",
   "description": "Archive Layer of Pipeline OS",
   "handlers": [
-    {
-      "name": "archive",
-      "path": "./archive.js",
-      "description": "生成归档记录"
-    },
-    {
-      "name": "changelog",
-      "path": "./changelog.js",
-      "description": "生成变更日志条目"
-    }
+    { "name": "archive", "path": "./archive.js", "description": "归档记录" },
+    { "name": "changelog", "path": "./changelog.js", "description": "变更日志" }
   ],
-  "presets": [
-    "pipeline-os-default"
-  ]
+  "presets": ["pipeline-os-default"]
 }

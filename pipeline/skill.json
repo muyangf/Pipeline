@@ -1,31 +1,13 @@
 {
-  "name": "pipeline-layer",
+  "name": "pipeline",
   "version": "3.0.0",
   "type": "pipeline-layer",
-  "description": "Pipeline Orchestrator Layer of Pipeline OS",
+  "description": "Pipeline Layer of Pipeline OS",
   "handlers": [
-    {
-      "name": "new-project",
-      "path": "./new-project.js",
-      "description": "新项目初始化流程"
-    },
-    {
-      "name": "update-feature",
-      "path": "./update-feature.js",
-      "description": "功能迭代流程"
-    },
-    {
-      "name": "next-step",
-      "path": "./next-step.js",
-      "description": "全局智能下一步引擎"
-    },
-    {
-      "name": "classify-task",
-      "path": "./classify-task.js",
-      "description": "任务分类与路由"
-    }
+    { "name": "new-project", "path": "./new-project.js", "description": "新项目路线图" },
+    { "name": "update-feature", "path": "./update-feature.js", "description": "功能迭代路线图" },
+    { "name": "classify-task", "path": "./classify-task.js", "description": "任务分类" },
+    { "name": "next-step", "path": "./next-step.js", "description": "智能下一步调度" }
   ],
-  "presets": [
-    "pipeline-os-default"
-  ]
+  "presets": ["pipeline-os-default"]
 }
