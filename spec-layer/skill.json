@@ -1,26 +1,36 @@
 {
   "name": "spec-layer",
-  "description": "规范层：需求、方案、任务拆解、变更规范（OpenSpec）",
-  "commands": {
-    "specify": {
-      "description": "根据用户输入生成需求文档（中文）",
-      "handler": "specify.js"
+  "version": "3.0.0",
+  "type": "spec-layer",
+  "description": "Specification Layer of Pipeline OS",
+  "handlers": [
+    {
+      "name": "specify",
+      "path": "./specify.js",
+      "description": "从自然语言需求生成结构化需求说明"
     },
-    "plan": {
-      "description": "根据需求生成技术方案（中文）",
-      "handler": "plan.js"
+    {
+      "name": "plan",
+      "path": "./plan.js",
+      "description": "从需求生成实现方案"
     },
-    "tasks": {
-      "description": "根据方案生成任务拆解（中文）",
-      "handler": "tasks.js"
+    {
+      "name": "tasks",
+      "path": "./tasks.js",
+      "description": "从方案拆分任务列表"
     },
-    "change-spec": {
-      "description": "老项目变更规范（OpenSpec propose）",
-      "handler": "change-spec.js"
+    {
+      "name": "change-spec",
+      "path": "./change-spec.js",
+      "description": "对现有系统的变更说明"
     },
-    "constitution": {
-      "description": "项目原则（可选）",
-      "handler": "constitution.js"
+    {
+      "name": "constitution",
+      "path": "./constitution.js",
+      "description": "项目宪法级约束说明"
     }
-  }
+  ],
+  "presets": [
+    "pipeline-os-default"
+  ]
 }

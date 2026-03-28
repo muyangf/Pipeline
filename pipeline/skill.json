@@ -1,22 +1,31 @@
 {
-  "name": "pipeline",
-  "description": "半自动开发流程控制器（新项目 / 更新功能 / 下一步提示）",
-  "commands": {
-    "new-project": {
-      "description": "创建新项目：规范 → 执行 → 质量 → 归档",
-      "handler": "new-project.js"
+  "name": "pipeline-layer",
+  "version": "3.0.0",
+  "type": "pipeline-layer",
+  "description": "Pipeline Orchestrator Layer of Pipeline OS",
+  "handlers": [
+    {
+      "name": "new-project",
+      "path": "./new-project.js",
+      "description": "新项目初始化流程"
     },
-    "update-feature": {
-      "description": "更新现有项目：变更规范 → 执行 → 质量 → 归档",
-      "handler": "update-feature.js"
+    {
+      "name": "update-feature",
+      "path": "./update-feature.js",
+      "description": "功能迭代流程"
     },
-    "next-step": {
-      "description": "根据当前上下文自动判断下一步操作",
-      "handler": "next-step.js"
+    {
+      "name": "next-step",
+      "path": "./next-step.js",
+      "description": "全局智能下一步引擎"
     },
-    "classify-task": {
-      "description": "自动判断任务类型（功能 / 修复 / 架构 / 文档 / AI 编排）",
-      "handler": "classify-task.js"
+    {
+      "name": "classify-task",
+      "path": "./classify-task.js",
+      "description": "任务分类与路由"
     }
-  }
+  ],
+  "presets": [
+    "pipeline-os-default"
+  ]
 }

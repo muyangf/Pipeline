@@ -1,14 +1,21 @@
 {
   "name": "archive-layer",
-  "description": "归档层：变更记录、changelog、OpenSpec archive",
-  "commands": {
-    "archive": {
-      "description": "归档变更（OpenSpec archive）",
-      "handler": "archive.js"
+  "version": "3.0.0",
+  "type": "archive-layer",
+  "description": "Archive Layer of Pipeline OS",
+  "handlers": [
+    {
+      "name": "archive",
+      "path": "./archive.js",
+      "description": "生成归档记录"
     },
-    "changelog": {
-      "description": "生成变更日志（中文）",
-      "handler": "changelog.js"
+    {
+      "name": "changelog",
+      "path": "./changelog.js",
+      "description": "生成变更日志条目"
     }
-  }
+  ],
+  "presets": [
+    "pipeline-os-default"
+  ]
 }

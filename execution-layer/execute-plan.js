@@ -1,24 +1,43 @@
 module.exports = async ({ input }) => {
   return `
-# 执行任务计划（Execute Plan）
+# 按方案执行（Execute Plan）
 
-以下是任务计划（中文）：
-
+输入的方案与任务：
 ${input}
 
 ---
 
-请根据任务计划，依次选择合适的执行方式：
+信息不足检查：
+- 如果任务列表不完整，请先提问。
 
-- /execution-layer.tdd
-- /execution-layer.implement
-- /execution-layer.subagent
+禁止事项：
+- 不得跳过任务
+- 不得改变输出结构
 
-对于每个任务，请输出：
-1. 选用的执行方式
-2. 简要理由（中文）
-3. 需要生成的代码 / 测试的概要
+---
 
-所有代码生成必须遵循 /execution-layer.code-style-smart 的智能代码规范。
+# 任务说明（中文）
+
+请根据方案与任务，生成一个执行顺序与执行建议。
+
+---
+
+# 输出格式（必须严格遵守）
+
+## 执行顺序
+1. ……
+2. ……
+
+## 每步执行说明
+- ……
+
+## 风险与注意事项
+- ……
+
+## 下一步建议
+- 命令：\`/execution-layer.tdd\` 或 \`/execution-layer.implement\`
+- 理由：……
+
+所有内容必须使用中文。
 `;
 };
