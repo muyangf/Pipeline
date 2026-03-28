@@ -1,0 +1,14 @@
+{
+  "name": "archive-layer",
+  "description": "归档层：变更记录、changelog、OpenSpec archive",
+  "commands": {
+    "archive": {
+      "description": "归档变更（OpenSpec archive）",
+      "handler": "archive.js"
+    },
+    "changelog": {
+      "description": "生成变更日志（中文）",
+      "handler": "changelog.js"
+    }
+  }
+}

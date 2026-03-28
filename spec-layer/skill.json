@@ -1,0 +1,26 @@
+{
+  "name": "spec-layer",
+  "description": "规范层：需求、方案、任务拆解、变更规范（OpenSpec）",
+  "commands": {
+    "specify": {
+      "description": "根据用户输入生成需求文档（中文）",
+      "handler": "specify.js"
+    },
+    "plan": {
+      "description": "根据需求生成技术方案（中文）",
+      "handler": "plan.js"
+    },
+    "tasks": {
+      "description": "根据方案生成任务拆解（中文）",
+      "handler": "tasks.js"
+    },
+    "change-spec": {
+      "description": "老项目变更规范（OpenSpec propose）",
+      "handler": "change-spec.js"
+    },
+    "constitution": {
+      "description": "项目原则（可选）",
+      "handler": "constitution.js"
+    }
+  }
+}

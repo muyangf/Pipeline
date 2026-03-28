@@ -1,0 +1,30 @@
+{
+  "name": "execution-layer",
+  "description": "执行层：TDD、子代理、实现、调试、智能代码规范",
+  "commands": {
+    "tdd": {
+      "description": "测试驱动开发（自动调用智能 code-style）",
+      "handler": "tdd.js"
+    },
+    "subagent": {
+      "description": "子代理开发（自动调用智能 code-style）",
+      "handler": "subagent.js"
+    },
+    "implement": {
+      "description": "直接实现任务（自动调用智能 code-style）",
+      "handler": "implement.js"
+    },
+    "debugging": {
+      "description": "调试代码（中文）",
+      "handler": "debugging.js"
+    },
+    "execute-plan": {
+      "description": "批量执行任务（自动调用智能 code-style）",
+      "handler": "execute-plan.js"
+    },
+    "code-style-smart": {
+      "description": "智能代码生成规范（自动识别 AI 编排代码 / 业务代码）",
+      "handler": "code-style-smart.js"
+    }
+  }
+}

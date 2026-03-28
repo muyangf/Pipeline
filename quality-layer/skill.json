@@ -1,0 +1,18 @@
+{
+  "name": "quality-layer",
+  "description": "质量层：代码审查、重构、完成分支",
+  "commands": {
+    "code-review": {
+      "description": "代码审查（引用智能 code-style 规范）",
+      "handler": "code-review.js"
+    },
+    "refactor": {
+      "description": "代码重构（中文）",
+      "handler": "refactor.js"
+    },
+    "finish-branch": {
+      "description": "完成分支（中文总结 + 下一步建议）",
+      "handler": "finish-branch.js"
+    }
+  }
+}

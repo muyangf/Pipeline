@@ -1,0 +1,22 @@
+{
+  "name": "pipeline",
+  "description": "半自动开发流程控制器（新项目 / 更新功能 / 下一步提示）",
+  "commands": {
+    "new-project": {
+      "description": "创建新项目：规范 → 执行 → 质量 → 归档",
+      "handler": "new-project.js"
+    },
+    "update-feature": {
+      "description": "更新现有项目：变更规范 → 执行 → 质量 → 归档",
+      "handler": "update-feature.js"
+    },
+    "next-step": {
+      "description": "根据当前上下文自动判断下一步操作",
+      "handler": "next-step.js"
+    },
+    "classify-task": {
+      "description": "自动判断任务类型（功能 / 修复 / 架构 / 文档 / AI 编排）",
+      "handler": "classify-task.js"
+    }
+  }
+}
